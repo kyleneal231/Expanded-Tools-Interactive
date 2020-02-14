@@ -1,0 +1,59 @@
+
+.container{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+
+}
+
+.bigsquare{
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(45deg, rgba(252,104,183,1) 0%, rgba(30,0,255,0.94) 100%);
+  position: relative;
+  top: 100px;
+  left: 200px;
+transform: rotate(45deg);
+mix-blend-mode: hue;
+
+}
+
+.circle{
+  width: 60px;
+  height: 60px;
+  border-radius:50%;
+  background: rgba(250,60,164,.75);
+  position: relative;
+
+
+
+top: 10%;
+left: 10%;
+
+
+
+
+
+}
+
+.smallsquare{
+  width: 35px;
+  height: 35px;
+  background: rgba(119, 0, 255, .9);
+  position: relative;
+
+
+  top: 17%;
+  left: 20%;
+
+}
+
+HTML {
+  height: 100%;
+}
+
+BODY {
+  background:rgba(65, 7, 173, 1);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
