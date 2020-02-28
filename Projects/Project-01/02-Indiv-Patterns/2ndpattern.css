@@ -1,29 +1,30 @@
 #container{
-  display: flex;
-
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+display: flex;
+position: relative;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
 
 
 }
 
 #container:hover .rect1, #container:hover .rect2, #container:hover .rect3, #container:hover .rect4{
-transform: scale(0.3) rotate(45deg) translate(16px, 1px) skew(-61deg, -73deg);
+transform: scale(0.8) rotate(165deg) translate(16px, 1px) skew(59deg, 2deg);
 background: linear-gradient(135deg, rgba(102,181,255,1) 0%, rgba(102,181,255,0.99) 2%, rgba(102,255,232,0.94) 15%, rgba(102,194,255,0.88) 31%, rgba(102,255,194,0.81) 50%, rgba(87,255,230,0.77) 62%, rgba(10,186,255,0.73) 71%, rgba(48,194,255,0.72) 75%, rgba(163,218,255,0.85) 87%, rgba(118,191,240,0.98) 98%, rgba(118,191,240,1) 100%);
+box-shadow: 6px -1px 14px 7px rgba(8,201,255,0.7);
 }
 #container1{
   display: flex;
-
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:space-around;
-
+  position: relative;
 }
 
 #container1:hover .rect1, #container1:hover .rect2, #container1:hover .rect3, #container1:hover .rect4{
-  transform: scale(0.5) rotate(45deg) translate(-36px, -24px) skew(59deg, 2deg);
+  transform: scale(0.5) rotate(-15deg) translate(16px, 1px) skew(59deg, 2deg);
   background: linear-gradient(135deg, rgba(204,102,255,1) 0%, rgba(204,102,255,0.99) 2%, rgba(107,102,255,0.94) 15%, rgba(191,102,255,0.88) 31%, rgba(102,135,255,0.81) 50%, rgba(92,87,255,0.77) 62%, rgba(124,10,255,0.73) 71%, rgba(147,48,255,0.72) 75%, rgba(217,163,255,0.85) 87%, rgba(189,117,240,0.98) 98%, rgba(189,117,240,1) 100%);
+box-shadow: -6px 1px 10px 15px rgba(255,176,250,0.82);
 
 }
 #container2{
@@ -31,38 +32,113 @@ background: linear-gradient(135deg, rgba(102,181,255,1) 0%, rgba(102,181,255,0.9
 display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+  position: relative;
 }
 
 #container2:hover .rect1, #container2:hover .rect2, #container2:hover .rect3, #container2:hover .rect4 {
 
-transform: scale(0.2) rotate(45deg) translate(16px, 1px) skew(-61deg, -73deg);
+transform: scale(1.2) rotate(165deg) translate(16px, 1px) skew(59deg, 2deg);
   background: linear-gradient(135deg, rgba(255,179,107,1) 0%, rgba(255,179,107,0.99) 2%, rgba(255,107,129,0.94) 15%, rgba(255,166,107,0.88) 31%, rgba(255,107,166,0.81) 50%, rgba(255,92,116,0.77) 62%, rgba(255,83,15,0.73) 71%, rgba(255,114,55,0.72) 75%, rgba(255,206,173,0.85) 87%, rgba(255,166,107,0.98) 98%, rgba(255,166,107,1) 100%);
+
+box-shadow: 6px -1px 16px 15px rgba(255,113,36,0.7);
 }
 
+#container3{
+  position: fixed;
+  top: 175px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
 
+}
+#container3:hover .circle {
+  background: radial-gradient(ellipse at center, rgba(250,140,180,1) 0%, rgba(250,140,180,1) 1%, rgba(39,245,204,1) 30%, rgba(140,250,241,1) 74%, rgba(242,36,112,1) 100%);
+}
+
+#container3A{
+  position: fixed;
+  top: 70px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+
+}
+
+#container3B{
+  position: fixed;
+  top: 270px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+
+}
+
+#container3C{
+  position: fixed;
+  top: 370px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+
+}
+
+#container3D{
+  position: fixed;
+  top: 470px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+
+}
+
+#container3E{
+  position: fixed;
+  top: 570px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+
+}
 
 
 }
 .rect1{
-  width: 150px;
-      height: 100px;
+width: 150px;
+height: 100px;
 
-      transform: rotate(45deg);
-      background: linear-gradient(135deg, rgba(10,226,255,1) 0%, rgba(10,226,255,0.95) 18%, rgba(250,132,132,0.91) 36%, rgba(174,98,245,0.86) 54%, rgba(59,30,253,0.81) 75%, rgba(26,10,255,0.86) 81%, rgba(250,153,140,0.98) 98%, rgba(250,153,140,1) 100%);
-      mix-blend-mode: color-dodge;
-      position: relative;
+transform: rotate(45deg);
+background: linear-gradient(135deg, rgba(10,226,255,1) 0%, rgba(10,226,255,0.95) 18%, rgba(250,132,132,0.91) 36%, rgba(174,98,245,0.86) 54%, rgba(59,30,253,0.81) 75%, rgba(26,10,255,0.86) 81%, rgba(250,153,140,0.98) 98%, rgba(250,153,140,1) 100%);
+mix-blend-mode: color-dodge;
+position: relative;
 }
 
 
 .rect2{
-  width: 150px;
-      height: 100px;
+width: 150px;
+height: 100px;
+transform:rotate(45deg);
+background: linear-gradient(135deg, rgba(10,226,255,1) 0%, rgba(10,226,255,0.95) 18%, rgba(250,132,132,0.91) 36%, rgba(174,98,245,0.86) 54%, rgba(59,30,253,0.81) 75%, rgba(26,10,255,0.86) 81%, rgba(250,153,140,0.98) 98%, rgba(250,153,140,1) 100%);
+mix-blend-mode: lighten;
 
-    transform:rotate(45deg);
-    background: linear-gradient(135deg, rgba(10,226,255,1) 0%, rgba(10,226,255,0.95) 18%, rgba(250,132,132,0.91) 36%, rgba(174,98,245,0.86) 54%, rgba(59,30,253,0.81) 75%, rgba(26,10,255,0.86) 81%, rgba(250,153,140,0.98) 98%, rgba(250,153,140,1) 100%);
-  margin: 3px;
-      mix-blend-mode: color-dodge;
-      position: relative;
+
 }
 
 
@@ -88,11 +164,85 @@ transform: scale(0.2) rotate(45deg) translate(16px, 1px) skew(-61deg, -73deg);
 position: relative;
     transform: rotate(45deg);
     background:  linear-gradient(135deg, rgba(10,226,255,1) 0%, rgba(10,226,255,0.95) 18%, rgba(250,132,132,0.91) 36%, rgba(174,98,245,0.86) 54%, rgba(59,30,253,0.81) 75%, rgba(26,10,255,0.86) 81%, rgba(250,153,140,0.98) 98%, rgba(250,153,140,1) 100%);
-      mix-blend-mode: color-dodge;
+      mix-blend-mode: hue;
+
+}
+.circle{
+
+  width: 40px;
+  height: 80px;
+  border-radius: 50%;
+  transform: rotate(315deg);
+  background-color: rgba(112, 206, 122);
+z-index: -1;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+
+}
+@keyframes example {
+  from {background: radial-gradient(ellipse at center, rgba(39,245,204,0.5) 0%, rgba(250,140,180,0.5) 33%, rgba(140,250,241,0.5) 73%, rgba(242,36,112,0.5) 100%);}
+  to {background:radial-gradient(ellipse at center, rgba(250,140,180,1) 0%, rgba(250,140,180,1) 1%, rgba(39,245,204,1) 30%, rgba(250,140,246,1) 58%, rgba(245,145,246,1) 59%, rgba(140,250,241,1) 82%, rgba(242,36,112,1) 100%);}
+}
+.circle:hover {
+  transform: rotateZ(25deg);
+  transition: transform 0.5s;
 
 }
 
 
+.circle2{
+
+  width: 40px;
+  height: 80px;
+  border-radius: 50%;
+  transform: rotate(315deg);
+  background-color: rgba(112, 206, 122);
+
+  animation-name: circle2;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+
+}
+@keyframes circle2 {
+  from {background:radial-gradient(ellipse at center, rgba(250,140,180,0.5) 0%, rgba(250,140,180,1) 1%, rgba(39,245,204,1) 30%, rgba(250,140,246,1) 58%, rgba(245,145,246,1) 59%, rgba(140,250,241,1) 82%, rgba(242,36,112,1) 100%);}
+  to {background: radial-gradient(ellipse at center, rgba(39,245,204,0.5) 0%, rgba(250,140,180,0.5) 33%, rgba(140,250,241,0.5) 73%, rgba(242,36,112,0.5) 100%);}
+}
+.circle2:hover {
+  transform: rotateY(320deg);
+  transition: transform 0.5s;
+
+}
+
+.circle3{
+
+  width: 40px;
+  height: 80px;
+  border-radius: 50%;
+  transform: rotate(315deg);
+  background-color: rgba(112, 206, 122);
+z-index:-1;
+  animation-name: circle3;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+
+}
+@keyframes circle3 {
+  from {background: radial-gradient(ellipse at center, rgba(39,245,204,0.5) 0%, rgba(250,140,180,0.5) 33%, rgba(140,250,241,0.5) 73%, rgba(242,36,112,0.5) 100%);}
+  to {background:radial-gradient(ellipse at center, rgba(250,140,180,0.9) 0%, rgba(250,140,180,0.9) 1%, rgba(39,245,204,0.9) 30%, rgba(250,140,246,0.9) 58%, rgba(245,145,246,0.9) 59%, rgba(140,250,241,1) 82%, rgba(242,36,112,1) 100%);}
+}
+.circle3:hover {
+  transform: rotateX(195deg);
+  transition: transform 0.5s;
+
+
+}
+a {
+  color: magenta;
+  text-align: right;
+  letter-spacing: 5px;
+  text-shadow: 3px 2px teal;
+}
 
 HTML {
   height: 100%;

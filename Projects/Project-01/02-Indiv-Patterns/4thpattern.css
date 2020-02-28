@@ -4,63 +4,207 @@ flex-wrap: wrap;
 flex-direction: row-reverse;
 justify-content:center;
 }
+
+
 #container2{
+  position: absolute;
+  top: 0px;
+  left: 0px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: center;
-  position: absolute;
+
+}
+
+
+#container3{
+  display: flex;
+flex-wrap: nowrap;
+justify-content: space-around;
+width: 100%;
+height: 15px;
+
+}
+#container3:hover .circle{
+  transform: rotateX(245deg) scale(2.5);
+  transition: transform 2s;
+}
+
+#container3A{
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+}
+#container3A:hover .circle{
+  transform: rotateY(330deg) scale(2.0);
+  transition: transform 2s;
+}
+
+#container3B{
+  position: fixed;
+  top: 200px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+}
+#container3B:hover .circle {
+  transform: scale(2.5) rotateX(30deg);
+  transition: transform 2s;
+}
+
+#container3C{
+  position: fixed;
+  top: 300px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+}
+#container3C:hover .circle {
+  transform: rotateZ(100deg) scale(3.0);
+  transition: transform 2s;
+}
+
+#container3D{
+  position: fixed;
+  top: 400px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+}
+#container3D:hover .circle {
+transform: rotateY(50deg) scale(2.9);
+transition: transform 2s;
+}
+
+#container3E{
+  position: fixed;
+  top: 500px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+}
+#container3E:hover .circle {
+  transform: rotateZ(75deg) scale(3.0);
+  transition: transform 2s;
+}
+
+#container3F{
+  position: fixed;
+  top: 600px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 15px;
+}
+#container3F:hover .circle{
+  transform: scale(3.2) rotateY(300deg);
 }
 
 
 
-.box {
+
+/* .position-fixed{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+} */
+.circle{
+
+  width: 25px;
+  height: 25px;
+  background-color: rgba(112, 206, 122);
+  border-radius: 50%;
+  animation-name: circle;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+/* margin: 80px; */
+}
+@keyframes circle {
+  from {background:linear-gradient(135deg, rgba(255,179,107,1) 0%, rgba(255,179,107,0.99) 2%, rgba(255,107,129,0.94) 15%, rgba(255,166,107,0.88) 31%, rgba(255,107,166,0.81) 50%, rgba(255,92,116,0.77) 62%, rgba(255,83,15,0.73) 71%, rgba(255,114,55,0.72) 75%, rgba(255,206,173,0.85) 87%, rgba(255,166,107,0.98) 98%, rgba(255,166,107,1) 100%);}
+  to {background: linear-gradient(135deg, rgba(255,107,216,1) 0%, rgba(255,107,216,0.99) 2%, rgba(201,107,255,0.94) 15%, rgba(255,107,228,0.88) 31%, rgba(164,107,255,0.81) 50%, rgba(195,92,255,0.77) 62%, rgba(255,15,239,0.73) 71%, rgba(255,56,238,0.72) 75%, rgba(255,173,240,0.85) 87%, rgba(255,107,228,0.98) 98%, rgba(255,107,228,1) 100%);}
+}
+.box{
   width: 0;
   height: 0;
 
   border-top: 50px solid aquamarine;
   border-right: 50px solid yellow;
-  border-bottom: 50px solid aquamarine;
+  border-bottom: 50px solid deeppink;
   border-left: 50px solid yellow;
+  animation: mymove 10s infinite;
+}
+@keyframes mymove {
+  20% {border-bottom: 60px dashed deeppink;}
+  20%{border-top: 60px dashed magenta;}
+  20%{border-left: 60px dashed purple;}
+  20%{border-right: 60px dashed purple;}
+}
+.box2{
+  width: 0;
+  height: 0;
+
+  border-top: 50px solid deeppink;
+  border-right: 50px solid yellow;
+  border-bottom: 50px solid blueviolet;
+  border-left: 50px solid yellow;
+  animation: box2 10s infinite;
+}
+@keyframes box2 {
+  20%{border-bottom: 60px dashed aquamarine;}
+  20%{border-top: 60px dashed aquamarine;}
+  20%{border-left: 60px dashed purple;}
+  20%{border-right: 60px dashed purple;}
+}
+
+#container:hover .box{
+
+  width: 0;
+  height: 0;
+
+  border-top: 50px solid rgba(0,250,154,0.5);
+  border-right: 50px solid rgba(60,179,113, 0.5);
+  border-bottom: 50px solid rgba(46,139,87, 0.5);
+  border-left: 50px solid rgba(50,205,50, 0.5);
+}
+#container:hover .box2{
+  border-bottom: 50px solid rgba(255,99,71, 0.5);
+  border-top: 50px solid rgba(255,127,80, 0.5);
+  border-right: 50px solid rgba(255,165,0, 0.5);
+  border-left: 50px solid rgba(255,215,0, 0.5);
 }
 
 
 
+.circle:hover {
+  opacity:0.8;
+  transform: scale(3.2);
+  transform: rotateY(300deg);
 
-
-    .diamond {
-      width: 0;
-      height: 0;
-      border: 50px solid transparent;
-      border-bottom-color: deeppink;
-      position: relative;
-      top: -50px;
-      opacity: 0.7;
-    }
-    .diamond:after {
-      content: '';
-      position: absolute;
-      left: -50px;
-      top: 50px;
-      width: 0;
-      height: 0;
-      border: 50px solid transparent;
-      border-top-color: deeppink;
-      opacity: 0.8;
-    }
-    .diamond:hover{
-box-shadow: 1px 1px 32px 45px rgba(255,146,173,0.64);
-opacity: 0.9;
-mix-blend-mode: hue;
-border-bottom-color: blueviolet;
+  transition: transform 1s;
 }
-
-#container2:hover .diamond:after{
-  opacity: 1;
-    mix-blend-mode: normal;
-
-    border-top-color: darkviolet;
-
-    box-shadow: 1px 1px 48px 38px rgba(255,110,161,0.51);
-
+a {
+  color: darkslateblue;
+  text-align: right;
+  letter-spacing: 5px;
+  text-shadow: 3px 2px deeppink;
 }

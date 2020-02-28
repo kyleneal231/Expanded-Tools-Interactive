@@ -13,9 +13,10 @@ justify-content:space-between;
 
 #container2:hover .inner, #container:hover .inner2{
   transform:rotateZ(315deg);
+  transition: transform 0.7s;
 }
 #container2:hover .outer{
-  border: 6px dashed hotpink;
+  border: 6px dashed yellow;
 }
 #container3{
   display: flex;
@@ -25,12 +26,14 @@ justify-content:space-between;
 }
 #container3:hover .inner, #container3:hover .inner2{
   transform:rotateZ(45deg);
+  transition: transform 0.7s;
 }
 #container3:hover .outer{
-  border: 6px groove hotpink;
+  border: 6px dotted deeppink;
 }
 #container:hover .inner, #container:hover .inner2{
   transform:rotateZ(45deg);
+  transition: transform 0.7s;
 }
 #container:hover .outer{
   border: 6px dotted hotpink;
@@ -43,25 +46,49 @@ justify-content:space-between;
   position: relative;
   border: 6px solid hotpink;
 display: inline-flex;
-margin: 1px;
+margin: 5px;
+
+
+}
+#containerfixed{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .outer:hover {
   border: 6px dotted hotpink;
+  transform: rotate(45deg);
 }
 .inner{
   top:15%;
   left: 15%;
   width: 75%;
   height: 75%;
-  /* transform: skew(5deg); */
+
 
 
   background: rgba(255,255,0,0.9);
   position: relative;
+  animation-name: inner;
+  animation-duration: 9s;
+  animation-iteration-count:infinite;
+
+  }
+  @keyframes inner {
+  from {background: rgba(255, 255, 0, 0.9);}
+  to {background: rgba(24, 237, 234, 0.9);}
+  }
 }
 .inner:hover {
   background:linear-gradient(135deg, rgba(245,110,225,1) 0%, rgba(245,110,225,0.99) 2%, rgba(180,110,245,0.94) 15%, rgba(245,110,236,0.88) 31%, rgba(146,110,245,0.81) 50%, rgba(245,73,211,0.77) 62%, rgba(174,98,245,0.73) 71%, rgba(191,76,248,0.72) 75%, rgba(243,10,255,0.85) 87%, rgba(255,161,249,0.98) 98%, rgba(255,161,249,1) 100%);
+  border: 6px dotted magenta;
 }
 .inner2{
 top: 15%;
@@ -76,7 +103,31 @@ background: linear-gradient(135deg, rgba(232,75,214,1) 0%, rgba(32,124,229,1) 10
   background: deeppink;
   opacity: 0.7;
   mix-blend-mode: luminosity;
+  transform: scale(2.2);
+
 }
+.line{
+  width: 10px;
+  height: 1000px;
+
+  background: yellow;
+  animation-name: line;
+  animation-duration: 9s;
+  animation-iteration-count:infinite;
+
+  }
+  @keyframes line {
+  from {background: rgba(255, 255, 0, 0.8); box-shadow: 1px 1px 10px 10px rgba(255,0,255,0.61);}
+  to {background: rgba(0,191,255, 0.9);}
+  }
+}
+a {
+  color: teal;
+  text-align: right;
+  letter-spacing: 5px;
+  text-shadow: 3px 2px fuchsia;
+}
+
 HTML {
   height: 100%;
 }

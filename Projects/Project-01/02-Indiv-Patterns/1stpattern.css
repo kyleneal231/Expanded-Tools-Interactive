@@ -3,11 +3,18 @@
   display: flex;
   flex-wrap: wrap-reverse;
   flex-direction: row;
+  justify-content: space-between;
 
 
 }
+#container:hover .smallsquare{
+  transform:rotateX(120deg);
+  transition: transform 1s;
+}
+#container:hover  .circle, #container:hover .smallsquare{
+  transform:scale(1);
+  transform: rotateZ(30deg);
 
-#container:hover  .circle{
 
 box-shadow: 1px 1px 24px 20px rgba(65,250,255,0.61);
 }
@@ -19,41 +26,82 @@ box-shadow: 1px 1px 24px 20px rgba(65,250,255,0.61);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-}
+  justify-content: space-between;
 
-#container2:hover .circle{
+
+}
+#container2:hover .smallsquare{
+transform:rotateZ(120deg);
+transition: transform 1s;
+}
+#container2:hover {
+  transform: translate(100px, 0px);
+}
+#container2:hover .circle, #container2:hover .smallsquare{
+
+    transform:scale(0.8);
+    border-radius: 50%;
+    background-color: yellow;
 
 box-shadow: 1px 1px 24px 20px rgba(255,39,208,0.61);
 }
 #container2:hover .bisquare{
   transform: scale(1.5) rotate(315deg);
+  box-shadow: 1px 1px 24px 20px rgba(255,39,208,0.61);
 }
 #container3{
   display: flex;
   flex-wrap: wrap-reverse;
   flex-direction: row;
-
-
+  justify-content: space-between;
 }
-#container3:hover .circle{
-
+#container3:hover .smallsquare{
+transform:rotateY(120deg);
+transition: transform 1s;
+}
+#container3:hover {
+  transform: translate(-100px, 0px);
+}
+#container3:hover .circle, #container3:hover .smallsquare{
+transform: scale(0.4);
+border-radius: 50%;
+background-color:orange;
+mix-blend-mode: lighten;
 box-shadow: 1px 1px 24px 20px rgba(255,230,39,0.61);
 }
 #container3:hover .bigsquare{
   transform:scale(1.5) rotate(45deg);
 }
+#container4{
+  position: fixed;
+  top: 0px;
+  left: 25px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 10px;
+  z-index: -1;
+
+}
+#container4:hover .circle{
+
+box-shadow: 1px 1px 24px 20px rgba(255,230,39,0.61);
+}
+#container4:hover .bigsquare{
+  transform:scale(1.5) rotate(45deg);
+}
 
 .bigsquare{
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   background: linear-gradient(45deg, rgba(252,104,183,1) 0%, rgba(30,0,255,0.94) 100%);
   position: relative;
-
-  top: 100px;
+top: 100px;
   left: 200px;
 transform: rotate(45deg);
 mix-blend-mode: hue;
+margin-bottom: 50px;
 
 }
 
@@ -65,11 +113,36 @@ mix-blend-mode: hue;
   border-radius:50%;
   background: rgba(250,60,164,.75);
   position: relative;
-top: 10%;
-left: 10%;
+top: 20%;
+left: 20%;
 
 }
+.line1{
+  width: 20px;
+  height: 800px;
+  background: red;
+animation-name: line1;
+animation-duration: 9s;
+animation-iteration-count:infinite;
 
+}
+@keyframes line1 {
+from {background: rgba(95, 24, 237, 0.5); box-shadow: 1px 1px 24px 20px rgba(255,230,39,0.61);}
+to {background: rgba(24, 237, 234, 0.9);}
+}
+.line2{
+  width: 20px;
+  height: 800px;
+  background: red;
+  animation-name: line2;
+  animation-duration: 9s;
+  animation-iteration-count:infinite;
+
+  }
+  @keyframes line2 {
+  from {background: rgba(24, 237, 234, 0.9);}
+  to {background: rgba(95, 24, 237, 0.5);}
+  }
 
 .smallsquare{
   width: 35px;
@@ -82,14 +155,19 @@ left: 10%;
   left: 20%;
 
 }
-.smallsquare:hover {
-  transform: rotate(45deg) scale(0.5);
-}
+/* .smallsquare:hover {
+  transform:scale(0.5);
+  border-radius: 50%;
+} */
 
 
-HTML {
-  height: 100%;
+a {
+  color: deeppink;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 3px 2px yellow;
 }
+
 
 BODY {
   background:rgba(65, 7, 173, 1);

@@ -1,0 +1,231 @@
+#container1{
+	display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#container1:active .first, #container1:active .second{
+transform: translate(30px);
+background: rgba(227, 86, 5, 0.9);
+}
+
+#container2{
+	display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#container2:active .second, #container2:active .first{
+transform: translate(-30px);
+background: rgba(252, 133, 126, 0.9);
+}
+#container3{
+	display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+#container3:active .first, #container3:active .second{
+transform: translate(30px);
+background: rgba(227, 86, 5, 0.9);
+}
+#container4{
+	display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#container4:active .second, #container4:active .first{
+transform: translate(-30px);
+background: rgba(252, 133, 126, 0.9);
+}
+#container5{
+	display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#container5:active .first, #container5:active .second{
+transform: translate(30px);
+background: rgba(227, 86, 5, 0.9);
+}
+#container6{
+	position: absolute;
+	top: 105px;
+	left: 0px;
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+	z-index: -1;
+}
+
+
+#container7{
+position: absolute;
+top: 210px;
+left: 0px;
+	display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#container8{
+	position: absolute;
+	top: 315px;
+	left: 0px;
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+	z-index: -1;
+}
+#container9{
+position: absolute;
+top: 420px;
+left: 0px;
+	display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#container10{
+	position: absolute;
+	top: 525px;
+	left: 0px;
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+	z-index: -1;
+}
+/* #container11{
+	position: absolute;
+	top: 630px;
+	left: 0px;
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+} */
+
+#container12{
+	position: absolute;
+	top: 630px;
+	left: 0px;
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+	z-index: -1;
+}
+#container13{
+	position: absolute;
+	top: 735px;
+	left: 0px;
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+#container14{
+	position: absolute;
+	top: 840px;
+	left: 0px;
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+	z-index: -1;
+}
+#container15{
+	position: absolute;
+	top: 930px;
+	left: 0px;
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+	z-index: -1;
+}
+.first{
+	display: inline-block;
+	width:16vw;
+    height: 6vw;
+    border-radius: 3vw;
+    padding: 0px;
+    margin: 2vw 0vw 0px 1vw;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+		background-color: orange;
+   	transform: rotate(45deg);
+		position: relative;
+		mix-blend-mode: lighten;
+
+
+}
+.first:hover {
+transform:rotateX(120deg);
+transition: transform 0.5s;
+background: linear-gradient(45deg, rgba(238,245,37,1) 0%, rgba(248,181,0,1) 51%, rgba(242,131,12,1) 100%);
+border-color: yellow;
+border-style:dotted;
+porder-width: 5px;
+
+}
+
+.second{
+display: inline-block;
+	width:16vw;
+    height: 6vw;
+    border-radius: 3vw;
+    padding: 0px;
+    margin: 2vw 0vw 0px 1vw;
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+		background: red;
+   	transform: rotate(-45deg);
+	position: relative;
+	mix-blend-mode: color;
+}
+.second:hover {
+transform:rotateY(120deg);
+transition: transform 0.5s;
+background: linear-gradient(135deg, rgba(238,245,37,1) 0%, rgba(232,111,81,1) 51%, rgba(240,27,12,1) 100%);
+border-color: yellow;
+border-style:dashed;
+porder-width: 9px;
+}
+.shape{
+
+	width: 1400px;
+	height: 40px;
+	/* transform: rotate(45deg); */
+	background: yellow;
+	mix-blend-mode: exclusion;
+	animation-name: shape;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+
+}
+@keyframes shape {
+  from {background: rgba(250, 246, 5);}
+  to {background: rgba(252, 154, 8);}
+}
+
+a {
+  color: orange;
+  text-align: left;
+  letter-spacing: 5px;
+  text-shadow: 3px 2px coral;
+}
+BODY {
+  background:papayawhip;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}

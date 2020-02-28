@@ -1,0 +1,240 @@
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.parent:hover{
+  background: linear-gradient(135deg, rgba(238,245,37,1) 0%, rgba(250,140,180,0.86) 51%, rgba(250,241,140,0.8) 73%, rgba(250,147,217,0.72) 100%);
+}
+.parent:hover .circle3 {
+  background: deeppink;
+  width: 30px;
+  height: 70px;
+  transform:rotate(45deg);
+
+
+}
+
+.parent-2{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+}
+.parent-2:hover {
+  background: linear-gradient(45deg, rgba(238,245,37,1) 0%, rgba(250,140,180,1) 51%, rgba(250,241,140,1) 73%, rgba(250,147,217,1) 100%);
+}
+.parent-2:hover .circle6{
+  background: purple;
+  width: 70px;
+  height: 20px;
+
+  transform: rotate(45deg);
+}
+
+.parent3{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.parent3:hover{
+  background: linear-gradient(135deg, rgba(238,245,37,1) 0%, rgba(250,140,180,0.86) 51%, rgba(250,241,140,0.8) 73%, rgba(250,147,217,0.72) 100%);
+}
+.parent3:hover .circle3 {
+  background: crimson;
+  width: 40px;
+  height: 100px;
+
+  transform:rotate(120deg);
+}
+
+.parent-4{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+}
+.parent-4:hover {
+  background: linear-gradient(45deg, rgba(238,245,37,1) 0%, rgba(250,140,180,1) 51%, rgba(250,241,140,1) 73%, rgba(250,147,217,1) 100%);
+}
+.parent-4:hover .circle6{
+  background: fuchsia;
+  width: 10px;
+  height: 70px;
+
+  transform:rotate(330deg);
+}
+
+.parent5{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.parent5:hover{
+  background: linear-gradient(135deg, rgba(238,245,37,1) 0%, rgba(250,140,180,0.86) 51%, rgba(250,241,140,0.8) 73%, rgba(250,147,217,0.72) 100%);
+}
+.parent5:hover .circle3 {
+  background: lightseagreen;
+  width: 90px;
+  height: 40px;
+
+  transform:rotate(220deg);
+}
+
+.parent-6{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+
+}
+.parent-6:hover {
+  background: linear-gradient(45deg, rgba(238,245,37,1) 0%, rgba(250,140,180,1) 51%, rgba(250,241,140,1) 73%, rgba(250,147,217,1) 100%);
+}
+.parent-6:hover .circle6{
+  background: mediumvioletred;
+  width: 60px;
+  height: 10px;
+
+  transform:rotate(300deg);
+}
+
+.parent7{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.parent7:hover{
+  background: linear-gradient(135deg, rgba(238,245,37,1) 0%, rgba(250,140,180,0.86) 51%, rgba(250,241,140,0.8) 73%, rgba(250,147,217,0.72) 100%);
+}
+.parent7:hover .circle3 {
+  background: slateblue;
+  width: 90px;
+  height: 20px;
+
+  transform:rotate(310deg);
+}
+
+.circle{
+
+      position: relative;
+
+       width: 150px;
+      height: 150px;
+      background: orange;
+      border-radius: 50%;
+      margin:-5px;
+      animation-name: circle;
+      animation-duration: 4s;
+      animation-iteration-count:infinite;
+
+    }
+    @keyframes circle {
+      from {background: orange;}
+      to {background: pink;}
+    }
+
+
+
+.circle2{
+       position: relative;
+       left: 40px;
+       top: 20px;
+       width: 100px;
+      height: 100px;
+      background: pink;
+      opacity: 0.7;
+      border-radius: 50%;
+      animation-name: circle2;
+      animation-duration: 4s;
+      animation-iteration-count:infinite;
+
+    }
+    @keyframes circle2 {
+      from {background: pink;}
+      to {background: orange;}
+    }
+
+
+
+
+.circle3{
+    position: relative;
+    top: 30px;
+       width: 50px;
+      height: 50px;
+      background: wheat;
+      border-radius: 50%;
+}
+
+.circle4{
+      position: relative;
+
+       width: 150px;
+      height: 150px;
+      background: pink;
+      border-radius: 50%;
+      z-index: 1;
+      animation-name: circle4;
+      animation-duration: 4s;
+      animation-iteration-count:infinite;
+
+    }
+    @keyframes circle4 {
+      from {background: pink;}
+      to {background: orange;}
+    }
+
+}
+
+.circle4:hover{
+  background: #db7093;
+ transform:matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+.circle5{
+
+      position: relative;
+
+      top: 30px;
+       width: 100px;
+      height: 100px;
+      background: orange;
+      opacity: 0.7;
+      border-radius: 50%;
+      z-index: 2;
+      animation-name: circle5;
+      animation-duration: 9s;
+      animation-iteration-count:infinite;
+
+    }
+    @keyframes circle5 {
+      from {background: orange;}
+      to {background: pink;}
+    }
+
+
+
+.circle6{
+      position: relative;
+      left: 50px;
+      top: 20px;
+       width: 50px;
+      height: 50px;
+      background: wheat;
+      border-radius: 50%;
+      z-index: 1;
+
+
+}
+a {
+  color: purple;
+  text-align: left;
+  letter-spacing: 5px;
+  text-shadow: 3px 2px purple;
+}
