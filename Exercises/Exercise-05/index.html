@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="letter-a"></div>
+
+<div id="container-a">
+<p> bloop bloop bloop </p>
+</div>
+
+<div class="letter-b"></div>
+<div class="gray-circle"></div>
+
+<div class="letter-c"></div>
+<div class="letter-d"></div>
+
+<div class="letter-e">
+<div class="letter-e-crossbar"></div>
+</div>
+<div class="letter-f">
+<div class="letter-f-cross"></div>
+</div>
+    <script>
+      $(document).ready(function(){
+        $('.letter-a').draggable();
+
+        $('#container-a').droppable({
+          accept: '.letter-a',
+          drop: function(event, ui){
+            $(this)
+            .addClass('a-dropped')
+            .find('p')
+            .html('Dropped!');
+          }
+
+        });
+        $('.letter-b').draggable({scope:'blue-border'});
+        $('.gray-circle').droppable({
+          scope:'blue-border',
+          drop: function(event, ui){
+            $(this)
+            .addClass("gray-circle-border");
+          }
+        });
+$('.letter-c').draggable();
+
+$('.letter-d').droppable({
+  tolerance: 'touch',
+  drop: function(){
+    $(this)
+    .addClass('letter-d-touch');
+  }
+});
+
+$('.letter-e').draggable();
+$('.letter-f').droppable({
+  activeClass:"letter-f-active",
+  hoverClass:"letter-f-hover",
+  drop: function(){
+    $(this)
+    .addClass("letter-f-hover");
+  }
+})
+
+      });
+      </script>
+    </body>
+    </html>
