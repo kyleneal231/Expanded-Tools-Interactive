@@ -1,0 +1,94 @@
+@import url();
+
+#letter-c {
+  top: 100px;
+  left:100px;
+  position: absolute;
+  display: block;
+    /* position: relative; */
+    /* left: 95px;
+    top: 40px; */
+margin: auto;
+    width: 60px;
+    height: 60px;
+    border-width: 15.5px 0 15.5px 10px;
+    border-style: solid;
+    border-color: #f94343 transparent #f94343 #f94343;
+
+    border-radius: 90% 5% 5% 90%;
+transform: skew(15deg, 0);
+}
+
+#letter-d{
+  top: 200px;
+  left:200px;
+  position: absolute;
+  display: block;
+/* position: relative; */
+
+/* margin: auto; */
+height: 105px;
+width: 95px;
+border-color: #f2ff61;
+border-width: 10px 15px 8px 20px;
+border-style: solid;
+border-radius: 10% 50% 40% 10%;
+transform: skew(20deg, 0);
+
+}
+
+#letter-o {
+  top: 0;
+  left:0;
+  position: absolute;
+  display: block;
+    /* position: relative;
+    margin: auto;
+    display: block; */
+    width: 50px;
+    height: 95px;
+    border-radius: 40px 40px 40px 40px;
+    /* border: 13px solid black; */
+    border-width: 10px 20px 10px 20px;
+    border-color: blue;
+    border-style: solid;
+    transform: skew(-15deg, 0);
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+
+#letter-c{
+  transform: rotate(45deg);
+}
+#letter-d{
+  transform: rotate(135deg);
+}
+
+#letter-o{
+  border-color: pink;
+}
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+#letter-c{
+  transform: rotate(-50deg);
+
+}
+#letter-d{
+  transform: rotateZ(75deg);
+}
+#letter-o{
+  border-color: orange;
+  }
+
+}
+@media (orientation: landscape) {
+
+
+
+}
