@@ -10,7 +10,7 @@
      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="look2.css" media="all">
+    <link rel="stylesheet" type="text/css" href="lookv2.css" media="all">
 
     <meta name="viewport" content="width=divice-width, initial-scale=1">
 <title>Action Verb Alphabet</title>
@@ -19,7 +19,8 @@
       <audio id="chimes" controls style="display:none">
         <source src="assets/chimes.wav" type="audio/wav">
 Your browser does not support audio elements.
-  		</audio>
+</audio>
+<div id="rectangle"></div>
       <div id="letter-a1">
       <div id ="letter-a1-crossbar"></div>
       </div>
@@ -42,8 +43,46 @@ Your browser does not support audio elements.
       <div id="letter-b1"></div>
       <div id="letter-e1"></div>
       <div id="letter-t2"></div>
-<h2> Directions</h2>
-<p> Make the webpage full screen. <br> Find letter A, drag and drop it into the top left box.<br> Find letter B, drag and drop it into the next box.<br> Repeat for all the remaining letters.</p>
+      <div class="dropdown">
+        <button class="dropbtn">Directions</button>
+        <div class="dropdown-content">
+          <p>Make the webpage full screen.</p>
+          <p>Find letter A, drag and drop it into the top left box.</p>
+          <p>Find letter B, drag and drop it into the next box.</p>
+          <p>Repeat for all the remaining letters.</p>
+        </div>
+      </div>
+      <div class="keydropdown">
+        <button class="keydropbtn">Key</button>
+        <div class="keydropdown-content">
+          <p>A is for Ascend</p>
+          <p>B is for Bounce</p>
+          <p>C is for Color Change</p>
+          <p>D is for Dangle</p>
+          <p>F is for Flip</p>
+          <p>G is for Grow</p>
+          <p>H is for Hop</p>
+          <p>I is for Inching</p>
+          <p>J is for Jiggle</p>
+          <p>K is for Knock Down</p>
+          <p>L is for Looping</p>
+          <p>M is for Mushing</p>
+          <p>N is for Nudge</p>
+          <p>O is for Open</p>
+          <p>P is for Pop</p>
+          <p>Q is for Quiver</p>
+          <p>R is for Rotate</p>
+          <p>S is for Swing</p>
+          <p>T is for Twist</p>
+          <p>U is for going Under</p>
+          <p>V is for Vibrate</p>
+          <p>W is for Wobble</p>
+          <p>X is for X-ray Flash</p>
+          <p>Y is for Yo-Yo</p>
+          <p>Z is for Zig-Zag</p>
+
+        </div>
+      </div>
 <div id = "titlecontainer">
   <div id= "small-a"></div>
   <div id ="small-c"></div>
@@ -174,40 +213,9 @@ Your browser does not support audio elements.
 <div id="box-y"></div>
 <div id="box-z"></div>
 </div>
-<div id ="key">
-<h3> KEY </h3>
-<p1> A is for Ascend<br>
-B is for Bounce<br>
-C is for Color Change<br>
-D is for Dangle<br>
-F is for Flip<br>
-G is for Grow<br>
-H is for Hop<br>
-I is for Inching<br>
-J is for Jiggle<br>
-K is for Knock Down<br>
-L is for Looping<br>
-M is for Mushing<br>
-N is for Nudge<br>
-O is for Open<br>
-P is for Pop<br>
-Q is for Quiver<br>
-R is for Rotate<br>
-S is for Swing<br>
-T is for Twist<br>
-U is for going Under<br>
-V is for Vibrate<br>
-W is for Wobble<br>
-X is for X-ray Flash<br>
-Y is for Yo-Yo<br>
-Z is for Zig-Zag
-</p1>
-</div>
+
 <script>
-var audio = $("#chimes")[0];
-$("#box-z").mouseenter(function() {
-  audio.play();
-});
+
 $(document).ready(function(){
 
 
